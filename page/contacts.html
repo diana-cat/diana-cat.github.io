@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <title>Контакты</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index1.html"><img src="../img/logo.png" alt="Logo" width="50"></a>                
+            </li>
+            <li>
+                <a href="about.html">О себе</a>
+            </li>
+            <li>
+                <a href="competencies.html">Компетенции</a>
+            </li>
+            <li>
+                <a href="resume.html">Резюме</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li>
+                <a href="contacts.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Как коту понять кота</h2>
+    </header>
+
+    <h4>Есть вопросы?</h4>
+
+    <main>
+        <form>
+            <div>
+                <p>Как вам удобно получить ответ?</p>
+                <p><input name="answer" type="radio" value="email"> По почте</p>
+                <p><input name="answer" type="radio" value="phone"> По телефону</p>
+                <p><input name="answer" type="radio" value="noAnswer"> Не нужно отвечать</p>
+            </div>
+        
+            <div>
+            <p>Укажите тему вопроса:</p>
+                <p><select name="select" size="1">
+                    <option selected value="s1">Работа</option>
+                    <option value="s2">Замурчательная терапия</option>
+                    <option value="s3">Скорая помощь</option>
+                    <option value="s4">Общение</option>
+                    <option value="s5">Деловое предложение</option>
+                </select>
+                </p>
+            </div>
+
+            <div>
+                <p>В какие дни вам удобнее получить ответ?</p>
+                <p><input type="checkbox" name="day" value="moreQuickly"> Как можно скорее</p>
+                <p><input type="checkbox" name="day" value="monday"> Понедельник</p>
+                <p><input type="checkbox" name="day" value="tuesday"> Вторник</p>
+                <p><input type="checkbox" name="day" value="wednesday"> Среда</p>
+                <p><input type="checkbox" name="day" value="thursday"> Четверг</p>
+                <p><input type="checkbox" name="day" value="friday"> Пятница</p>
+                <p><input type="checkbox" name="day" value="saturday"> Суббота</p>
+                <p><input type="checkbox" name="day" value="sunday"> Воскресение</p>
+            </div>
+
+            <div>
+                <label>Ваше имя:
+                    <input type="text" 
+                        placeholder="Ваш ответ"
+                        pattern="[a-zA-Zа-яА-Я]+"
+                        required
+                        id = "name">
+                </label>
+            </div>
+            <div>
+                <label>Электронная почта:
+                    <input type="text" 
+                        placeholder="Ваш ответ"
+                        pattern="[a-zA-Z0-9.@-:;()]+"
+                        required
+                        id = "email">
+                </label>
+            </div>
+            <div>
+                <label>Телефон:
+                    <input type="text" 
+                        placeholder="Ваш ответ"
+                        pattern="[0-9]+"
+                        required
+                        id = "phone">
+                </label>
+            </div>
+
+            <div>
+                <h4>Введите ваш вопрос:</h4>
+                <p><textarea name="question"></textarea></p>
+            </div>
+
+            <div>
+                <input type="submit" value = "Отправить вопрос">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>Сайт разработан Главным Котом, Copyright © 2022</div>
+        <div>
+            <a href="https://vk.com"><img src="../img/vk.png" alt="VK" width="50" height="50"></a>
+            <a href="https://www.instagram.com/"><img src="../img/insta.png" alt="instagram" width="50" height="50"></a>
+            <a href="https://github.com"><img src="../img/git.png" alt="git" width="50" height="50"></a>
+        </div>
+    </footer>
+</body>
+</html>

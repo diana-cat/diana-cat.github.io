@@ -1,0 +1,24 @@
+header{color: rgb(33, 1, 54);}
+
+footer{
+    margin-top: 100pt;;
+}
+
+.navColor 
+{
+    background-color: rgb(205, 152, 255);
+}
+.navColor a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navPosition ul
+{
+    list-style: none;
+    
+    padding-left: 0%;
+    display: flex;
+    width: 660px;
+    text-align: center;
+}
