@@ -3,46 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/sitecss.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайтик о себе</title> 
 </head>
-<body class="color">
-    <header class="menu-main color">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index1.html"><img src="../img/logocat1.png" alt="Logo" width="36"></a>                
-                </li>
-                <li>
-                    <a href="about.html">О себе</a>
-                </li>
-                <li>
-                    <a href="competencies.html">Компетенции</a>
-                </li>
-                <li>
-                    <a href="resume.html">Резюме</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">Портфолио</a>
-                </li>
-                <li>
-                    <a href="contacts.html">Вопросы</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body class="colorbody">
     
+    <nav class="menu-main menucolor">
+        <div class=" wrapper">
+        <ul>
+            <li>
+                <a href="index1.html"><img class="fl" src="../img/logocat1.png" alt="Logo" width="36"></a>                
+            </li>
+            <li>
+                <a href="about.html">О себе</a>
+            </li>
+            <li>
+                <a href="competencies.html">Компетенции</a>
+            </li>
+            <li>
+                <a href="resume.html">Резюме</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li>
+                <a href="contacts.html">Вопросы</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    
+    <div class=" wrapper">
+    <header class="styleheader">
     <h1>Сайт о прекрасном коте</h1>
+    <img class="wrapper" src="../img/headerCat.jpg" alt="headerCat">
+    </header>
 
     <main>
-        <div>
-            <span style="display: inline-block; width: 500px;">В поездах дальнего следования люди могут в полной мере ощутить себя домашними котами. 
+        <section class="whitesection section1">
+            <div class="section1text">
+            <!-- style="display: inline-block; width: 500px;" -->
+            <span>В поездах дальнего следования люди могут в полной мере ощутить себя домашними котами. 
             Всё время лежат, спят, ничего не делают. А встают только в туалет или поесть. 
             Ну и в окно ещё смотрят на птичек.
             </span>
             <br><img src="../img/catinmainpage.jpg" alt="Cat" width="300" >
-        </div>
+            </div>
         <div class="slideshow dir-slideshow">
             <img src="../img/slideshow1.jpg" alt="slideshow1" class="i_1 img">
             <img src="../img/slideshow2.jpg" alt="slideshow2" class="i_2 img">
@@ -51,15 +58,77 @@
             <img src="../img/slideshow5.jpg" alt="slideshow5" class="i_5 img">
             <img src="../img/slideshow6.jpg" alt="slideshow6" class="i_6 img">
         </div>
-    </main>
+        </section>
 
-    <footer class="footer color">
+        <section class="blacksection section2">
+            <h2>Мои компетенции</h2>
+
+            <div><img src="../img/vscode.jpg" alt="VSCode">
+            <br>Visual Studio Code</div>
+
+            <div><img src="../img/c.png" alt="C#">
+            <br>C#</div>
+        
+            <div><img src="../img/ai.jpg" alt="Ai">
+            <br>Adobe Illustrator</div>
+
+            <div><img src="../img/ps.png" alt="Ps">
+            <br>Adobe Photoshop</div>
+
+            <div><img src="../img/sims.jpg" alt="Sims">
+            <br>Sims</div>
+
+            <div><img src="../img/witcher.png" alt="Witcher">
+            <br>Witcher</div>
+        </section>
+
+        <section class="whitesection section3">
+            <h2>Услуги кота</h2>
+
+            <ul>
+                <li>
+                    Написание кода на разных языках программирования, в том числе и на CatLub         
+                </li>
+                <li>
+                    Создание картинок и логотипов для котов и в виде котов
+                </li>
+                <li>
+                    Жмякание по кнопкам на клавиатуре
+                </li>
+                <li>
+                    Фигурное лежание в неудобных позах
+                </li>
+                <li>
+                    Прохождение игр в темноте
+                </li>
+            </ul>
+        </section>
+
+        <section class="blacksection section4">
+            <h2>Необычные способности</h2>
+            1.  Высокая скорость
+            <br><span>Некоторые кошечки способны развивать скорость жмяков лапками вплоть до 48 км/ч. 
+            Сильные лапки не устают даже при долгом сидении за компьютером. </span>
+
+            <div>
+                <!-- <input type="button" value = "Подробнее" 
+                onclick="window.location.href = 'https://pikabu.ru/story/9_neobyichnyikh_sposobnostey_vashey_koshki_6384160'"> -->
+                <a href="https://pikabu.ru/story/9_neobyichnyikh_sposobnostey_vashey_koshki_6384160" 
+                    class="button">Подробнее</a>
+            </div>
+        </section>
+    </main>
+</div>
+
+    <footer class="footer whitesection">
+        <div class=" wrapper">
         <div>Сайт разработан Главным Котом, Copyright © 2022</div>
         <div>
             <a href="https://vk.com"><img src="../img/vk.png" alt="VK" width="50" height="50"></a>
             <a href="https://www.instagram.com/"><img src="../img/insta.png" alt="instagram" width="50" height="50"></a>
             <a href="https://github.com"><img src="../img/git.png" alt="git" width="50" height="50"></a>
         </div>
+    </div>
     </footer>
 
 </body>
