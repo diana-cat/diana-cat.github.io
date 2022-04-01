@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <title>Canvas</title>
+</head>
+<body>
+    <section>
+        <canvas id='canva'>Обновите браузер</canvas>
+		<script>
+			var canva = document.getElementById("canva"),
+			    ctx     = canva.getContext('2d');
+                canva.width  = 300;
+                canva.height = 300;
+                ctx.strokeStyle = 'rgb(61, 0, 14)';
+                ctx.strokeRect(15, 15, 266, 266); /*strokeRect(x, y, ширина, высота) Рисует прямоугольник*/
+                ctx.strokeRect(18, 18, 260, 260); /*2 strokeRect - это рамка*/
+                ctx.fillStyle = 'rgb(149, 0, 186)';
+                ctx.fillRect(20, 20, 256, 256); /*fillRect(x, y, ширина, высота) черного цвета*/
+                for (i = 0; i < 8; i += 2) /*удаление квадратиков, чтоб сделать шахматную доску*/
+                    for (j = 0; j < 8; j += 2) {
+                        ctx.clearRect(20 + i * 32, 20 + j * 32, 32, 32); /*Очищает область на холсте размер с прямоугольник заданного размера*/
+                        ctx.clearRect(20 + (i + 1) * 32, 20 + (j + 1) * 32, 32, 32); }
+		</script>
+    </section>
+
+    <section>
+        <canvas id='crown'>Обновите браузер</canvas>
+		<script>
+			var crown = document.getElementById("crown"),
+			    ctx     = crown.getContext('2d');
+                crown.height = 200;
+                crown.width  = 200;
+			ctx.beginPath();
+			ctx.arc(80, 100, 56, 3/4 * Math.PI, 1/4 * Math.PI, true); /*рисование дуги, где x, y-центр окружности, радиус, начальный и конечный угол, последний параметр указывает направление*/
+			ctx.fill(); /*заливает фигуру сплошным цветом*/
+			ctx.moveTo(40, 140); /*перемещает "курсор" в позицию x, y и делает её текущей*/
+			ctx.lineTo(20, 40); /*ведёт линию из текущей позиции в указанную, и делает в последствии указанную текущей*/
+			ctx.lineTo(60, 100);
+			ctx.lineTo(80, 20);
+			ctx.lineTo(100, 100);
+			ctx.lineTo(140, 40);
+			ctx.lineTo(120, 140);
+			ctx.stroke(); /*обводит фигуру линиями*/
+		</script>
+    </section>
+
+    <section>
+        <canvas id='bezie'>Обновите браузер</canvas>
+		<script>
+			var bezie = document.getElementById("bezie"),
+			    ctx     = bezie.getContext('2d');
+                bezie.height = 200;
+                bezie.width  = 300;
+			ctx.beginPath();
+			ctx.moveTo(10, 15);
+			ctx.bezierCurveTo(75, 55, 175, 20, 250, 15); /*кубическая кривая Бизье*/
+			ctx.moveTo(10, 15);
+			ctx.quadraticCurveTo(100, 100, 250, 15); /*квадратичная кривая Бизье*/
+			ctx.stroke();
+		</script>
+    </section>
+</body>
+</html>

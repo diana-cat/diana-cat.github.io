@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title> 
+    <script>
+        alert("Hi?")
+        document.write("Hi) How are you?")
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id = "hka">Meow</h1>
+        <script>
+            hka.addEventListener("click", handler);
+            function handler()
+            {
+                let h = document.getElementById('hka');
+                h.style.background = 'red'; 
+                h.innerText = "color";
+                alert("yes. tyta");            
+            }
+        </script>
+    </header>
+
+    <nav>
+        <h2>
+            <script>
+                document.write("What???")
+            </script>
+        </h2>
+    </nav>
+
+    <main id = "form">
+        <textarea name="color" id="text" cols="30" rows="10"></textarea>
+        <div>
+            <input type="button" value="ChangeColor" id = "button">
+        </div>
+        <div id = "tbs">
+
+        </div>
+        <canvas id='canva'></canvas>
+        
+        <script>
+            let textBoxes = [];
+            canva.width  = 600;
+            canva.height = 600;
+            let canDo = true;
+            //let form = document.getElementById("form");
+            document.getElementById("button").onclick = function() 
+            {
+                if(canDo = true)
+                {for(i = 0; i < document.getElementById("text").value; i++)
+                {
+                    textBoxes[i] = document.createElement("input");
+                    textBoxes[i].type = "textarea";
+                    //textBoxes[i].setAttridute("type", "text");
+                    textBoxes[i].value = i*10 + 50;
+                    textBoxes[i].className = "textBoxes";
+                    tbs.append(textBoxes[i]);
+                }
+                Diagramma();
+                canDo = false;
+                }
+            }
+
+            let x =0, y = 0, w = 40;
+            function Diagramma()
+            {
+                //let canva = document.getElementById("canva"),
+			    let ctx = canva.getContext('2d'); 
+                
+                let maxY = textBoxes[textBoxes.length-1].value;
+
+                for(i = 0; i < textBoxes.length; i++)
+                {
+                    let localY = maxY - textBoxes[i].value;
+                    //let r = textBoxes[i].value;
+                    ctx.fillStyle = SetColor();
+                    ctx.fillRect(x + w*i, localY, w, textBoxes[i].value);
+                }
+            }
+
+            function SetColor()
+            {
+                r = Math.floor(Math.random() * (256)),
+                g = Math.floor(Math.random() * (256)),
+                b = Math.floor(Math.random() * (256)),
+                color = '#' + r.toString(16) + g.toString(16) + b.toString(16)
+                return color;
+            }
+        </script>
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
