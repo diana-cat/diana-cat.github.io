@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 75%/120% sans-serif;
+  text-align: center;
+  position: relative;}
+  
+.largeImg {
+  border: solid 1px #ccc;
+  width: 500px;
+  height: 500px;
+  padding: 5px;}
+
+.thumbBar img {
+  display: inline-block;
+  width: 7%;
+  cursor: pointer;
+  border: solid 1px #ccc;
+  padding: 3px;}
+
+.content div
+{
+  display: inline-block;
+  overflow: hidden;
+}
+
+.arrow
+{
+  width: 30px;
+  height: 512px;
+  background-color: lightgray;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.arrow p
+{
+  margin-top: 256px;
+  text-align: center;
+}
+
+
